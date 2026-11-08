@@ -2,7 +2,7 @@
 
 This is the development roadmap for one home hydroponic tower. Complete one phase at a time and review its outputs before advancing. Phase numbers match the detailed [workflow](WORKFLOW.md).
 
-**Current status:** project setup complete; Phase 1 is next. All six development phases remain planned. No hydraulic or plant-performance results have been validated.
+**Current status:** Development phase.
 
 ## Methodology flowchart
 

@@ -1,12 +1,14 @@
 # Learning and build workflow
 
+See the [development flowchart and planned outputs](DEVELOPMENT_PLAN.md) for the phase sequence, review gates, and output tracker.
+
 ## 0. Establish the project
 
 - [x] Record the Python / Blender / OpenFOAM direction.
 - [x] Separate recirculation from water replenishment.
 - [x] Create the local Python scaffold.
 - [x] Create and connect an empty public GitHub repository: https://github.com/SuwajAryal/hydroponic-agriculture
-- [ ] Publish reviewed files at the end of the working day.
+- [x] Publish reviewed setup and development roadmap at the end of the first working day (2026-11-08).
 
 ## 1. Record the design basis
 

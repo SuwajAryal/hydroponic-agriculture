@@ -4,7 +4,7 @@ A home hydroponic tower project: learn, calculate, model, test, and build.
 
 Public repository: https://github.com/SuwajAryal/hydroponic-agriculture
 
-The remote was created empty; project files remain local until the first end-of-day push.
+Development phase: setup complete; Phase 1 (design basis) is next. See the [methodology flowchart and planned outputs](docs/DEVELOPMENT_PLAN.md).
 
 Status: project scaffold. No dimensions, pump, watering interval, or flow rate has been validated. The reference video has not been reviewed frame by frame.
 
@@ -16,6 +16,8 @@ Status: project scaffold. No dimensions, pump, watering interval, or flow rate h
 - Validate predictions against a plain-water prototype before adding plants.
 
 ## Start here
+
+Begin with the [six-phase development flowchart](docs/DEVELOPMENT_PLAN.md), then follow the detailed steps below.
 
 1. Read `docs/WORKFLOW.md` for milestones and acceptance checks.
 2. Read `docs/TOOLS.md` for Blender, FreeCAD, Unreal, and CFD choices.

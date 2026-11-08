@@ -1,0 +1,23 @@
+{
+  "status": "unmeasured concept; null values must be supplied before calculation",
+  "geometry": {
+    "tower_height_m": null,
+    "tower_internal_diameter_m": null,
+    "planting_site_count": null
+  },
+  "supply": {
+    "static_lift_at_low_reservoir_m": null,
+    "static_lift_at_high_reservoir_m": null,
+    "pipe_internal_diameter_m": null,
+    "pipe_length_m": null,
+    "minor_loss_coefficient": null,
+    "pump_curve_source": null
+  },
+  "operation": {
+    "circuit": "single recirculating nutrient-water loop",
+    "circulation_mode": "to be determined by crop and wetting tests",
+    "fresh_water_top_up": "manual level-based initially; measure EC/pH after mixing",
+    "pump_on_minutes": null,
+    "pump_off_minutes": null
+  }
+}

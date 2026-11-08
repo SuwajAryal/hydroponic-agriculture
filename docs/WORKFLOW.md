@@ -5,7 +5,7 @@
 - [x] Record the Python / Blender / OpenFOAM direction.
 - [x] Separate recirculation from water replenishment.
 - [x] Create the local Python scaffold.
-- [ ] Create and connect an empty public GitHub repository.
+- [x] Create and connect an empty public GitHub repository: https://github.com/SuwajAryal/hydroponic-agriculture
 - [ ] Publish reviewed files at the end of the working day.
 
 ## 1. Record the design basis

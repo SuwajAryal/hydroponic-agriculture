@@ -2,6 +2,10 @@
 
 A home hydroponic tower project: learn, calculate, model, test, and build.
 
+Public repository: https://github.com/SuwajAryal/hydroponic-agriculture
+
+The remote was created empty; project files remain local until the first end-of-day push.
+
 Status: project scaffold. No dimensions, pump, watering interval, or flow rate has been validated. The reference video has not been reviewed frame by frame.
 
 ## Working approach

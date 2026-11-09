@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Six practical lessons for designing, modelling and testing a home hydroponic tower.">
+  <title>Hydroponic Tower Learning Guide</title>
+  <link rel="stylesheet" href="guide.css">
+</head>
+<body id="top">
+  <a class="skip" href="#lessons">Skip to lessons</a>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="#top">Hydroponic tower</a>
+      <a href="https://github.com/SuwajAryal/hydroponic-agriculture/blob/main/docs/DEVELOPMENT_PLAN.md">Project roadmap <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="guide-title">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Development phase</p>
+          <h1 id="guide-title">Hydroponic tower<br>learning guide</h1>
+          <p class="intro">Design one tower, model how the water moves, then test what happens when you build it.</p>
+          <a class="start" href="#design">Start with phase 1 <span aria-hidden="true">↓</span></a>
+        </div>
+        <figure class="loop">
+          <svg viewBox="0 0 252 220" role="img" aria-labelledby="loop-title">
+            <title id="loop-title">The pump lifts water from the reservoir to the distributor. Water falls through the planting pockets and drains back into the reservoir.</title>
+            <defs>
+              <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+                <path d="M0 0L10 5L0 10z" fill="#267a75"/>
+              </marker>
+            </defs>
+            <path d="M107 36H146V171H107Z" fill="#f5fbf1" stroke="#32664d" stroke-width="2"/>
+            <path d="M107 73h-22l7 16h15m39 13h22l-7 16h-15m-39 13h-22l7 16h15" fill="#b9d9ac" stroke="#32664d" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M76 172H177L168 205H85Z" fill="#bce5df" stroke="#32664d" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M97 188H55V46H103" fill="none" stroke="#267a75" stroke-width="3" marker-end="url(#arrow)" stroke-linejoin="round"/>
+            <path d="M126 49V158" fill="none" stroke="#267a75" stroke-width="3" stroke-dasharray="5 7" marker-end="url(#arrow)"/>
+            <rect x="91" y="182" width="17" height="13" rx="3" fill="#267a75"/>
+            <g fill="#274739" font-family="system-ui, sans-serif" font-size="11">
+              <text x="151" y="39">Distributor</text>
+              <text x="170" y="113">Plant pocket</text>
+              <text x="20" y="191">Pump</text>
+              <text x="175" y="201">Reservoir</text>
+            </g>
+          </svg>
+          <figcaption>One loop. Pump up, drain back.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="lessons" class="wrap lessons" aria-labelledby="lessons-title">
+      <h2 id="lessons-title">Six phases</h2>
+      <p>Use the links for background, then try the exercise on this tower.</p>
+      <nav class="phases" aria-label="Jump to a phase">
+        <a href="#design">01 Design</a>
+        <a href="#python">02 Python</a>
+        <a href="#blender">03 Blender</a>
+        <a href="#openfoam">04 OpenFOAM</a>
+        <a href="#test">05 Water test</a>
+        <a href="#grow">06 Grow</a>
+      </nav>
+
+      <div class="cards">
+        <article id="design">
+          <p class="eyebrow">Phase 01</p>
+          <h3>Sketch the tower</h3>
+          <p>Follow the water from the reservoir to the top distributor and back.</p>
+          <ul class="resources">
+            <li><a href="https://www.youtube.com/watch?v=arNVaP5XNEg">Watch Chris Loh’s original tower build</a></li>
+            <li><a href="https://extension.okstate.edu/fact-sheets/building-a-vertical-hydroponic-tower">Read Oklahoma State’s tower guide</a></li>
+          </ul>
+          <p class="work"><strong>Try it.</strong> Draw a side view and label the tower height, pipe diameter, planting pockets and high and low reservoir levels. Mark any dimensions you still need to measure.</p>
+          <p class="output"><strong>Save</strong> a dimensioned sketch and input list.</p>
+        </article>
+
+        <article id="python">
+          <p class="eyebrow">Phase 02</p>
+          <h3>Work out the pump duty</h3>
+          <p>Use Python to estimate how much head the pump needs at different flow rates.</p>
+          <ul class="resources">
+            <li><a href="https://www.youtube.com/watch?v=nrCAxXfRU28">Watch Microsoft’s lesson on Python functions</a></li>
+            <li><a href="https://www.youtube.com/watch?v=QTYc-WLFShk">Watch Grundfos find and read a pump curve</a></li>
+          </ul>
+          <p class="work"><strong>Try it.</strong> Start with a function that converts L/min to m³/s. Then calculate static lift and pipe losses at a few flows, using both reservoir levels.</p>
+          <p class="output"><strong>Save</strong> the system curves and a candidate duty point from a real pump curve.</p>
+        </article>
+
+        <article id="blender">
+          <p class="eyebrow">Phase 03</p>
+          <h3>Model it in Blender</h3>
+          <p>Turn the sketch into a model you can inspect from the inside.</p>
+          <ul class="resources">
+            <li><a href="https://www.youtube.com/watch?v=7bHleRTEmZ0">Watch Blender’s modelling introduction</a></li>
+            <li><a href="https://docs.blender.org/manual/en/latest/scene_layout/scene/properties.html#units">Read Blender’s guide to scene units</a></li>
+          </ul>
+          <p class="work"><strong>Try it.</strong> Set the scene to metric. Model the tower and reservoir to size, then make one pocket and duplicate it at the spacing from your sketch.</p>
+          <p class="output"><strong>Save</strong> an editable Blender file and a cutaway view.</p>
+        </article>
+
+        <article id="openfoam">
+          <p class="eyebrow">Phase 04</p>
+          <h3>Explore air–water flow</h3>
+          <p>Learn how OpenFOAM tracks a moving water surface before modelling the tower.</p>
+          <ul class="resources">
+            <li><a href="https://www.youtube.com/watch?v=0hR5dD7RlcY">Watch a modified dam-break setup</a></li>
+            <li><a href="https://www.openfoam.com/documentation/tutorial-guide/4-multiphase-flow/4.1-breaking-of-a-dam">Follow the OpenFOAM dam-break tutorial</a></li>
+          </ul>
+          <p class="work"><strong>Try it.</strong> Run the example for your OpenFOAM version and view the water surface in ParaView. Then sketch a smaller case around the tower distributor and a few pockets.</p>
+          <p class="output"><strong>Save</strong> your tutorial case and a plan for measuring wetting in the tower model.</p>
+        </article>
+
+        <article id="test">
+          <p class="eyebrow">Phase 05</p>
+          <h3>Test with plain water</h3>
+          <p>Check whether the physical tower behaves as your calculations predicted.</p>
+          <ul class="resources">
+            <li><a href="https://www.youtube.com/watch?v=mimElkAepYY">Watch Chris Loh’s follow-up build</a></li>
+            <li><a href="https://github.com/SuwajAryal/hydroponic-agriculture/blob/main/data/measurements/wetting_template.csv">Open the project’s measurement sheet</a></li>
+          </ul>
+          <p class="work"><strong>Try it.</strong> Collect and time the pump discharge. Check each pocket for wetting, then switch off the pump and watch how much water drains back.</p>
+          <p class="output"><strong>Save</strong> measured flow, wetting notes and any changes the tower needs.</p>
+        </article>
+
+        <article id="grow">
+          <p class="eyebrow">Phase 06</p>
+          <h3>Start growing</h3>
+          <p>Once the water test passes, start with a few plants and see how their roots change the flow.</p>
+          <ul class="resources">
+            <li><a href="https://extension.umn.edu/garden-and-home/yard-and-garden/gardening-in-minnesota/small-scale-hydroponics">Explore Minnesota Extension’s home hydroponics lessons</a></li>
+            <li><a href="https://extension.okstate.edu/fact-sheets/electrical-conductivity-and-ph-guide-for-hydroponics">Read Oklahoma State’s EC and pH guide</a></li>
+          </ul>
+          <p class="work"><strong>Try it.</strong> Log reservoir level, EC, pH and root growth. Record top-ups and recheck whether water reaches each pocket as roots fill in.</p>
+          <p class="output"><strong>Save</strong> a growing log and a routine based on your observations.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap header-row">
+      <a href="https://github.com/SuwajAryal/hydroponic-agriculture">Project on GitHub <span aria-hidden="true">↗</span></a>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>

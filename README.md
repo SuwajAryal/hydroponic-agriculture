@@ -17,6 +17,8 @@ Status: project scaffold. No dimensions, pump, watering interval, or flow rate h
 
 ## Start here
 
+[Open the learning guide](https://suwajaryal.github.io/hydroponic-agriculture/) for videos and exercises across all six phases.
+
 Begin with the [six-phase development flowchart](docs/DEVELOPMENT_PLAN.md), then follow the detailed steps below.
 
 1. Read `docs/WORKFLOW.md` for milestones and acceptance checks.

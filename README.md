@@ -4,9 +4,9 @@ A home hydroponic tower project: learn, calculate, model, test, and build.
 
 Public repository: https://github.com/SuwajAryal/hydroponic-agriculture
 
-Development phase: setup complete; Phase 1 (design basis) is next. See the [methodology flowchart and planned outputs](docs/DEVELOPMENT_PLAN.md).
+Development phase. The working design is **four stackable towers with a top supply loop and a full-width shared reservoir**. The slide-out tank is kept as an alternative.
 
-Status: project scaffold. No dimensions, pump, watering interval, or flow rate has been validated. The reference video has not been reviewed frame by frame.
+[Open the Blender model index](models/blender/README.md) for downloads, previews and editing instructions. The dimensions are still assumptions. Next, work out pump duty and branch flow using the [development roadmap](docs/DEVELOPMENT_PLAN.md).
 
 ## Working approach
 
@@ -34,7 +34,7 @@ This first command reports inputs only. It does not calculate flow, simulate wat
 - `hydroponics/`: Python entry point; future calculation modules.
 - `configs/`: shared design inputs with units in field names; null means unknown.
 - `docs/`: workflow, decisions, and operating concept.
-- `models/blender/`: future Blender scenes and geometry scripts.
+- [Blender models](models/blender/README.md): editable scenes, previews, dimensions and generators.
 - `cfd/openfoam/`: future reproducible cases and solver notes.
 - `data/measurements/`: measured data and experiment records.
 - `results/`: generated results, ignored by Git.

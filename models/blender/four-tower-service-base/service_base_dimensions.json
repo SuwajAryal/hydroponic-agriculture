@@ -1,0 +1,34 @@
+{
+  "status": "Unmeasured service base concept. Verify supports, drainage and usable water volume.",
+  "tower_spacing_m": 0.47,
+  "deck_top_m": 0.324,
+  "deck_bottom_m": 0.316,
+  "frame": {
+    "leg_centers_m": 0.407,
+    "member_size_m": 0.035
+  },
+  "tank": {
+    "outside_x_m": 0.58,
+    "outside_y_m": 0.46,
+    "bottom_m": 0.018,
+    "rim_m": 0.218,
+    "wall_m": 0.008,
+    "floor_m": 0.008,
+    "low_mark_m": 0.11,
+    "high_mark_m": 0.165
+  },
+  "return_system": {
+    "collector_half_length_m": 0.281,
+    "collector_width_m": 0.08,
+    "center_floor_m": 0.239,
+    "end_floor_m": 0.254,
+    "spout_inside_diameter_m": 0.044,
+    "spout_bottom_m": 0.232
+  },
+  "supply": {
+    "rear_riser_y_m": 0.35,
+    "lid_feed_y_m": 0.15,
+    "disconnect_height_m": 0.248,
+    "top_header_centerline_m": 1.69
+  }
+}

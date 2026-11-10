@@ -1,0 +1,44 @@
+{
+  "status": "Concept dimensions for geometry only. No dimensions measured from the video.",
+  "tower": {
+    "tier_count": 4,
+    "tier_height_m": 0.3,
+    "inside_diameter_m": 0.15,
+    "wall_m": 0.004,
+    "sites_per_tier": 3,
+    "stagger_angle_deg": 60,
+    "socket_bore_m": 0.049,
+    "socket_projection_m": 0.041,
+    "pocket_tilt_deg": 32,
+    "net_pot_rim_diameter_m": 0.047,
+    "net_pot_depth_m": 0.047,
+    "body_style": "one_piece"
+  },
+  "reservoir": {
+    "base_outside_diameter_m": 0.31,
+    "rim_outside_diameter_m": 0.35,
+    "rim_height_m": 0.32,
+    "wall_m": 0.005,
+    "floor_m": 0.008,
+    "low_water_m": 0.1,
+    "high_water_m": 0.22
+  },
+  "feed": {
+    "riser_inside_diameter_m": 0.014,
+    "riser_outside_diameter_m": 0.018,
+    "pump_top_m": 0.068,
+    "route": "external",
+    "external_offset_m": 0.134,
+    "bottom_turn_height_m": 0.125,
+    "crest_above_cover_m": 0.035,
+    "bend_trim_m": 0.022
+  },
+  "distributor": {
+    "plate_outside_diameter_m": 0.155,
+    "plate_offset_above_tower_m": 0.004,
+    "outlet_offset_above_tower_m": 0.032,
+    "hole_count": 8,
+    "hole_pitch_radius_m": 0.051,
+    "hole_diameter_m": 0.004
+  }
+}

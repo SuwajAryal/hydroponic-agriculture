@@ -1,0 +1,11 @@
+{
+  "status": "Concept geometry with assumed dimensions",
+  "tower_spacing_m": 0.47,
+  "top_header_centerline_m": 1.69,
+  "tower_outlet_m": 1.556,
+  "riser_y_m": 0.35,
+  "header_outside_diameter_m": 0.034,
+  "drop_outside_diameter_m": 0.018,
+  "distributor_plate_base_m": 1.528,
+  "distributor_plate_diameter_m": 0.155
+}

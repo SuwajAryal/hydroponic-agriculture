@@ -1,0 +1,23 @@
+{
+  "status": "Unmeasured layout and candidate dimensions. Not a pump or structural design.",
+  "tower_spacing_m": 0.47,
+  "return_opening_diameter_m": 0.152,
+  "reservoir": {
+    "outside_x_m": 0.88,
+    "outside_y_m": 0.88,
+    "rim_height_m": 0.316,
+    "deck_top_m": 0.324,
+    "wall_m": 0.012,
+    "floor_m": 0.012,
+    "low_water_m": 0.1,
+    "high_water_m": 0.22
+  },
+  "feed": {
+    "manifold_centerline_m": 0.12,
+    "pump_envelope_top_m": 0.077,
+    "header_inside_diameter_m": 0.028,
+    "header_outside_diameter_m": 0.034,
+    "branch_inside_diameter_m": 0.014,
+    "branch_outside_diameter_m": 0.018
+  }
+}

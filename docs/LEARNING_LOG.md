@@ -11,3 +11,9 @@ Created the empty public repository https://github.com/SuwajAryal/hydroponic-agr
 Added the six-phase development flowchart, planned output table, review gates, and phase tracker. Phase 1 is the next session; no modelling phases were advanced today.
 
 End-of-day publication: initial project files and development roadmap prepared for the public repository. Future work continues locally, one phase at a time.
+
+## 2026-11-10
+
+Selected the four stackable towers with a top supply loop and full-width tank as the working design. Kept the slide-out service base and the earlier layouts for comparison. The [model index](../models/blender/README.md) links the editable Blender files, renders and design notes.
+
+Next session: set a target flow per tower and calculate the pump duty and branch balance for the selected layout.
